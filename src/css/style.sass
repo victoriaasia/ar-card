@@ -18,7 +18,7 @@ body
 
 .container
   width: 100%
-  height: 100vh
+  height: 100%
   margin: 0 auto
   display: flex
   align-items: center
@@ -31,6 +31,7 @@ body
 .item
   position: relative
   width: 400px
+  min-width: 400px
   height: 755px
   &-back
     background: url('../img/back.png') no-repeat
@@ -46,14 +47,18 @@ body
       height: 100%
       position: relative
       transition: all 2s ease
-      // &::before
-      //   position: absolute
-      //   content: ''
-      //   width: 100%
-      //   height: 100%
-      //   top: 0
-      //   left: 0
-      //   background: rgba(0,0,0, 0.4)
+      &.--animated
+        &::before
+          background: rgba(0,0,0, 0)
+      &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: rgba(0,0,0, 1)
+        transition: all 2.2s ease
   &-top
     position: absolute
     top: 0
