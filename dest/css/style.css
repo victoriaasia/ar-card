@@ -50,8 +50,7 @@ body {
 
 .item {
   position: relative;
-  min-width: 400px;
-  width: 30%;
+  width: 400px;
   height: 755px; }
   .item-back {
     background: url("../img/back.png") no-repeat;
@@ -72,7 +71,7 @@ body {
   .item-top {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 35px;
     background: url("../img/img1.png") no-repeat;
     background-size: contain;
     width: 438px;
@@ -83,7 +82,7 @@ body {
     .item-top.--animated {
       -webkit-transform: rotateX(0deg) rotateY(100deg) rotateZ(0deg);
       transform: rotateX(0deg) rotateY(100deg) rotateZ(0deg);
-      left: -50%;
+      left: -205px;
       background: url("../img/back.png") no-repeat;
       background-size: contain;
       width: 438px;
